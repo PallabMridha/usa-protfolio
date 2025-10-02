@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+
+@theme {
+  /* text collor */
+  --color-pramiry: #767676; 
+  --color-box: #C4C4C4; 
+  /* text collor */
+
+  /* font */
+  --font-dm: "DM Sans", "sans-serif";
+  /* font */
+}
