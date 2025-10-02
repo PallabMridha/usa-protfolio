@@ -26,7 +26,7 @@ const Bener = () => {
             <Image src={logo}/>
 
             <div className="pt-[100px]">
-              <h1 className={`text-[40px] font-bold font-dm`}>Hi, I am<br/><samp className={`text-[80px] font-bold font-dm`}> Pollob Mridha</samp></h1>
+              <h1 className={`text-[40px] font-bold font-dm`}>Hi, I am<br/><samp className={`text-[80px] font-bold font-dm`}></samp></h1>
             <p className={`text-[25px] font-bold font-dm text-pramiry pt-[-0px]`}>full stack developer</p>
             <Flex className={`gap-x-5 pt-[40px]`}>
               <div className="bg-box w-12 h-12  ">
