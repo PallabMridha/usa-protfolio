@@ -8,26 +8,57 @@ import boxtwo from "../../assets/VectorTwo.png"
 import benerimage from "../../assets/sayed-mridha-pallob.png"
 import boxThree from "../../assets/VectorThree.png"
 import { Link } from "react-router-dom"
-
-
-
-
+import TextType from "/src/Animation/TextType"
+import SplitText from "/src/Animation/SplitText";
+import AnimatedContent from "/src/Animation/AnimatedContent";
 
 
 const Bener = () => {
 
+const handleAnimationComplete = () => {
+  console.log('All letters have animated!');
+};
+
+//  className="bg-[url(/src/assets/bgimage.png)] w-full h-[600px] mt-6 bg-center bg-cover bg-no-repeat"
 
   return (
     <>
-      <div className="bg-[url(/src/assets/bgimage.png)] w-full h-[600px] mt-6 bg-center bg-cover bg-no-repeat">
+      <div className="bg-bg-nav mt-3">
       <Countener>
         <Flex className={`justify-between`}>
           <div className="pt-[40px]">
             <Image src={logo}/>
 
             <div className="pt-[100px]">
-              <h1 className={`text-[40px] font-bold font-dm`}>Hi, I am<br/><samp className={`text-[80px] font-bold font-dm`}></samp></h1>
-            <p className={`text-[25px] font-bold font-dm text-pramiry pt-[-0px]`}>full stack developer</p>
+            
+            <TextType className={`text-[40px] font-bold font-dm text-white`}
+              text={["Hi, I am Pollob Mridha", "Hi, I am Pollob Mridha", "Hi, I am Pollob Mridha"]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="|"
+              loop={true} 
+  
+            />
+
+          <div className="">
+              <SplitText
+                text="Full Stack Developer"
+                className="text-[25px] font-bold font-dm text-white"
+                delay={100}
+                duration={0.6}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="center"
+                onLetterAnimationComplete={handleAnimationComplete}
+              />
+          </div>
+
+
             <Flex className={`gap-x-5 pt-[40px]`}>
               <div className="bg-box w-12 h-12  ">
                 <Link to={"https://www.facebook.com/pallab.mrida/"}target="_blank">
@@ -47,6 +78,24 @@ const Bener = () => {
               </div>
              </Link>
             </Flex>
+
+            <AnimatedContent
+              distance={150}
+              direction="horizontal"
+              reverse={false}
+              duration={1.2}
+              ease="bounce.out"
+              initialOpacity={0.2}
+              animateOpacity
+              scale={1.1}
+              threshold={0.2}
+              delay={0.3}
+              >
+              <div>
+                <button className={` mt-8 mb-8 rounded-2xl uppercase font-bold text-  [15px] dm text-white border items-center px-5 py-3`}>CONTACT ME </  button>
+              </div>
+            </AnimatedContent>
+
 
             </div>
           </div>
@@ -96,13 +145,5 @@ const Bener = () => {
     </>
   )
 }
-
-
-
-
-
-
-
-
 
 export default Bener

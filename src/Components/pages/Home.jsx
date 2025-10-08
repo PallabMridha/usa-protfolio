@@ -6,7 +6,7 @@ import Aboutus from '../Layouts/Aboutus'
 import Skills from '../Layouts/Skills'
 import MyProject from '../Layouts/MyProject'
 import Contact from '../Layouts/Contact'
-import Animited from '../Layouts/Animited'
+
 
 
 
@@ -21,7 +21,7 @@ const Home = () => {
        <Skills/>
        <MyProject/>
        <Contact/>
-       <Animited/>
+ 
        
       
     </div>

@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 const Hader = () => {
   return (
     <>
-      <div className="bg-black  p-2.5">
+      <div className="bg-bg-nav  p-2.5">
         <Countener>
           <Flex className={` `}>
-            <div className=" bg-white  text-black font-bold rounded-full w-10 h-10 flex items-center justify-cente ">
+            <div className=" text-white font-bold flex items-center justify-cente ">
           
-             <Link to={"/"} className={`m-auto`}>
+             <Link to={"/"} className={``}>
                <h1 className={``}>PM</h1>
              </Link>
             
@@ -21,9 +21,12 @@ const Hader = () => {
             
              <Link to={"/"}>
 
-              <li className={`font-bold text-[17px] pr-10 dm text-white`}>Home</li>
+              <li className={`font-bold text-[17px] pr-10 dm text-white hover:text-red-500`}>Home</li>
              
-             </Link>              
+
+
+             
+             </Link>             
 
              
             
@@ -46,7 +49,7 @@ const Hader = () => {
 
 
                <Link to={"/"}>
-            <button className={` rounded-2xl uppercase font-bold text-[15px] dm text-black bg-white items-center px-5 py-3`}>CONTACT ME </button>
+            <button className={` rounded-2xl uppercase font-bold text-[15px] dm text-white border items-center px-5 py-3`}>CONTACT ME </button>
             </Link>
            
             </ul>

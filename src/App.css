@@ -1,10 +1,13 @@
-@import "tailwindcss";
+@import "tailwindcss" ;
+
+
 
 
 @theme {
   /* text collor */
   --color-pramiry: #767676; 
   --color-box: #C4C4C4; 
+  --color-bg-nav:#012a4a; 
   /* text collor */
 
   /* font */
